@@ -509,3 +509,45 @@ body {
   .section-founder__content-post {
     font-size: 24px;
     line-height: 29px; }
+
+.section-plans {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center; }
+  .section-plans__title {
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: bold; }
+  .section-plans__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 110px; }
+  .section-plans__list {
+    display: flex;
+    justify-content: center; }
+    .section-plans__list-item {
+      flex-basis: 370px;
+      padding: 60px 45px; }
+      .section-plans__list-item_title {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 26px; }
+      .section-plans__list-item_price {
+        margin-bottom: 26px; }
+        .section-plans__list-item_price .prefix {
+          font-size: 72px;
+          line-height: 86px;
+          font-weight: bold;
+          color: #4861e0; }
+        .section-plans__list-item_price .postfix {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: bold; }
+      .section-plans__list-item_description {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        margin-bottom: 40px; }
