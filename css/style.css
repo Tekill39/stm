@@ -403,7 +403,8 @@ body {
   color: white;
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block; }
 
 .section-header {
   color: white;
@@ -461,9 +462,12 @@ body {
         padding: 16px 20px;
         border-radius: 4px;
         outline: none;
-        width: 100%; }
+        width: 100%;
+        transition: .2s; }
         .section-header-wrapper__form-input input::placeholder {
           color: white; }
+        .section-header-wrapper__form-input input:focus {
+          background: rgba(255, 255, 255, 0.5); }
 
 .section-promo {
   padding-top: 120px;
@@ -530,30 +534,100 @@ body {
   .section-plans__list {
     display: flex;
     justify-content: center; }
-    .section-plans__list-item {
-      flex-basis: 370px;
-      padding: 60px 45px; }
-      .section-plans__list-item_title {
-        font-size: 14px;
-        line-height: 17px;
+  .section-plans-item {
+    flex-basis: 370px;
+    padding: 60px 45px; }
+    .section-plans-item_title {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 26px; }
+    .section-plans-item_price {
+      margin-bottom: 26px; }
+      .section-plans-item_price .prefix {
+        font-size: 72px;
+        line-height: 86px;
         font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 26px; }
-      .section-plans__list-item_price {
-        margin-bottom: 26px; }
-        .section-plans__list-item_price .prefix {
-          font-size: 72px;
-          line-height: 86px;
-          font-weight: bold;
-          color: #4861e0; }
-        .section-plans__list-item_price .postfix {
-          font-size: 14px;
-          line-height: 17px;
-          font-weight: bold; }
-      .section-plans__list-item_description {
-        font-size: 16px;
-        line-height: 28px;
-        font-weight: 300;
-        margin-bottom: 40px; }
-      .section-plans__list-item_button {
-        align-items: flex-end; }
+        color: #4861e0; }
+    .section-plans-item_description {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 300;
+      margin-bottom: 40px; }
+
+.section-free {
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #10ee1b, #4861e0);
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  .section-free__title {
+    font-size: 65px;
+    line-height: 48px;
+    font-weight: 300;
+    margin-bottom: 26px; }
+  .section-free__description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    width: 50%;
+    margin: 0 auto; }
+  .section-free__button {
+    padding-top: 50px; }
+    .section-free__button .btn-free {
+      border: 1px solid #6c6c6c;
+      background: white;
+      font-size: 16px;
+      margin: 0;
+      padding: 16px 20px;
+      color: #6c6c6c;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif; }
+
+.section-footer {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .section-footer__logo {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold; }
+  .section-footer__nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-top: 36px; }
+    .section-footer__nav li + li {
+      margin-left: 60px; }
+    .section-footer__nav li a {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #464646;
+      text-decoration: none; }
+  .section-footer__copyright_and_links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 18px;
+    width: 60%;
+    margin: 0 auto; }
+
+.helper-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .helper-links LI + li {
+    margin-left: 40px; }
+    .helper-links LI + li a {
+      font-size: 14px;
+      line-height: 20px;
+      color: #464646;
+      text-decoration: none; }
