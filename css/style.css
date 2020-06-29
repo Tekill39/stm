@@ -534,27 +534,27 @@ body {
   .section-plans__list {
     display: flex;
     justify-content: center; }
-  .section-plans-item {
-    flex-basis: 370px;
-    padding: 60px 45px; }
-    .section-plans-item_title {
-      font-size: 14px;
-      line-height: 17px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 26px; }
-    .section-plans-item_price {
-      margin-bottom: 26px; }
-      .section-plans-item_price .prefix {
-        font-size: 72px;
-        line-height: 86px;
+    .section-plans__list-item {
+      flex-basis: 370px;
+      padding: 60px 45px; }
+      .section-plans__list-item_title {
+        font-size: 24px;
+        line-height: 17px;
         font-weight: bold;
-        color: #4861e0; }
-    .section-plans-item_description {
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 300;
-      margin-bottom: 40px; }
+        text-transform: uppercase;
+        margin-bottom: 26px; }
+      .section-plans__list-item_price {
+        margin-bottom: 26px; }
+        .section-plans__list-item_price .prefix {
+          font-size: 72px;
+          line-height: 86px;
+          font-weight: bold;
+          color: #4861e0; }
+      .section-plans__list-item_description {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        margin-bottom: 40px; }
 
 .section-free {
   text-align: center;
@@ -613,7 +613,7 @@ body {
       text-decoration: none; }
   .section-footer__copyright_and_links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 14px;
     line-height: 18px;
     width: 60%;
