@@ -402,6 +402,12 @@
         &-item {
             flex-basis: 370px;
             padding: 60px 45px;
+            transition: 0.5s ease;
+            cursor: pointer;
+        &:hover{
+                transform: scale(1.2);
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+            }
 
             &_title{
                 font-size: 24px;
